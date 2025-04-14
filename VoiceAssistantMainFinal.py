@@ -1,5 +1,9 @@
-import speech_recognition as sr 
-import datetime         #imports the necessary modules
+#This is the final project for the Voice Assistant assignment that I am turning in. It isn't as ambitious as the rough draft, but I can confirm that it works, so
+#it's the one I'm going with. It's simplistic, but it fulfills the requirements and works as intended.
+
+
+import speech_recognition as sr     #imports the necessary modules
+import datetime       
 import pyjokes
 import webbrowser
 import pyautogui
