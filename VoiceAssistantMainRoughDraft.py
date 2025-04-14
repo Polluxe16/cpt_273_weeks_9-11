@@ -1,3 +1,7 @@
+#I included this basically to serve as a way to document my thought process and functions I tried. I had initially designed it to have different functions for each task, but
+#I decided I didn't like that approach too much and each command wouldn't needed to be called multiple times anyways. I had also tried to implement tts here, but
+#my computer kept receiving errors when I tried to use it, so it may end up working for you. Rather than let it go to waste, I stored it here.
+
 import speech_recognition as sr 
 import datetime
 from gtts import gTTS
