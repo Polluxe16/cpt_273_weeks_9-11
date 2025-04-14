@@ -27,13 +27,13 @@ And the program should start.
 
 Now once the program starts, as long as you have a microphone connected, it shouls start to listen for your input. There are various keywords that will activate certain functions. These keywords and their functions are listed here:
 
-Time: Will tell you the current time
-Joke: Will tell you a joke
-Cow: Will Moo at you
-Open Browser: Will open your web browser to a really cool YouTube video
-Move: Will move your mouse to the top left corner of your screen
-Find: Will print the coordinates of your mouse's location on the screen
-Exit: Will close the program
+Time: Will tell you the current time        
+Joke: Will tell you a joke        
+Cow: Will Moo at you        
+Open Browser: Will open your web browser to a really cool YouTube video        
+Move: Will move your mouse to the top left corner of your screen        
+Find: Will print the coordinates of your mouse's location on the screen        
+Exit: Will close the program      
 
 And that is all for the project!
 
