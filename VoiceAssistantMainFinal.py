@@ -29,35 +29,34 @@ def main():         #Main function that performs tasks based on words heard
 
         command = listen_command()  
 
-        #AssistantName = "Bob"          Code for making it respond when it's name is called; just left it out cuz it's kind of unnecessary for testing
+        AssistantName = "Bob"          #Code for making it respond when it's name is called
 
-        #if command and AssistantName in command:
-
-        if "time" in command:       #Outputs the time if it hears the word "time"
-            current_time = datetime.datetime.now().strftime("%H:%M")
-            response = f"The current time is {current_time}."
-            print(response)
-        elif "joke" in command:    #Uses pyjokes to get and output a random joke
-            joke = pyjokes.get_joke()
-            print(joke)
-        elif "cow" in command:   #Just thought I'd throw this in for fun
-            print("MOOOOOOOOOOOOOOOOO")
-        elif "open browser" in command:   #Opens a web browser to a really cool Youtube video
-            print("Opening Browser.")
-            webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
-        elif "move" in command:    #Moves your mouse to the top left corner of your computer screen (0,0)
-            pyautogui.moveTo(0,0)
-            print("Your mouse has been moved to the top left of the screen")
-        elif "find" in command:     #Prints the location of your mouse where it currently is
-            print("Your mouse's location is", pyautogui.position())
-        #elif "screenshot" in command:       Here's code to print a screenshot, but it kept getting errors when I tried to use it so I commented it
-        #    pyautogui.screenshot("screenshot.png")
-        #    print("There, I took a screenshot for you")
-        elif "exit" in command:    #Closes the program
-            print("See you later")
-            break
-        else:       #Handling for when it doesn't recognize any words for tasks
-            print("Sorry, I can't respond to this request")
+        if command and AssistantName in command:
+            if "time" in command:       #Outputs the time if it hears the word "time"
+                current_time = datetime.datetime.now().strftime("%H:%M")
+                response = f"The current time is {current_time}."
+                print(response)
+            elif "joke" in command:    #Uses pyjokes to get and output a random joke
+                joke = pyjokes.get_joke()
+                print(joke)
+            elif "cow" in command:   #Just thought I'd throw this in for fun
+                print("MOOOOOOOOOOOOOOOOO")
+            elif "open browser" in command:   #Opens a web browser to a really cool Youtube video
+                print("Opening Browser.")
+                webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+            elif "move" in command:    #Moves your mouse to the top left corner of your computer screen (0,0)
+                pyautogui.moveTo(0,0)
+                print("Your mouse has been moved to the top left of the screen")
+            elif "find" in command:     #Prints the location of your mouse where it currently is
+                print("Your mouse's location is", pyautogui.position())
+            #elif "screenshot" in command:       Here's code to print a screenshot, but it kept getting errors when I tried to use it so I commented it
+            #    pyautogui.screenshot("screenshot.png")
+            #    print("There, I took a screenshot for you")
+            elif "exit" in command:    #Closes the program
+                print("See you later")
+                break
+            else:       #Handling for when it doesn't recognize any words for tasks
+                print("Sorry, I can't respond to this request")
     
     
 if __name__ == "__main__":      #Calls the main function
