@@ -6,10 +6,10 @@ This repository contains two files; my final assignment and a rough draft that w
 
 In order to run this file, there are a few dependencies that you will need to install. They are:
 
-SpeechRecognition
-datetime
-pyjokes
-webbrowser
+SpeechRecognition,
+datetime,
+pyjokes,
+webbrowser,
 pyautogui
 
 In order to install each of these, ensure that you have Python installed on your computer as well as pip, and run the following command in the terminal:
